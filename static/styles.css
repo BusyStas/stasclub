@@ -75,6 +75,22 @@ header h1 {
     background-color: #0056b3;
 }
 
+.referral-code-box {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.referral-code-box:hover {
+    background-color: #218838;
+}
+
 footer {
     text-align: center;
     padding: 1rem;
