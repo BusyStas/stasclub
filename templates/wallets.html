@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet Referral Codes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .vertical-card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+        .vertical-card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .vertical-card img {
+            max-width: 150px;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+        .vertical-card-content {
+            flex: 1;
+        }
+        .referral-box {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Crypto Wallets Referral Hub</h1>
+        <p>Find the best referral codes for cryptocurrency wallets</p>
+    </header>
+    <main class="vertical-card-container">
+        <div class="vertical-card">
+            <img src="{{ url_for('static', filename='images/wallet_metamask.png') }}" alt="MetaMask">
+            <div class="vertical-card-content">
+                <h2>MetaMask</h2>
+                <p>Your gateway to blockchain applications</p>
+                <div class="referral-box">
+                    <a href="https://metamask.io/ref/xyz123" class="referral-code">xyz123</a>
+                    <button class="copy-btn" onclick="copyToClipboard('xyz123')">Copy</button>
+                </div>
+            </div>
+        </div>
+        <div class="vertical-card">
+            <img src="{{ url_for('static', filename='images/wallet_trustwallet.png') }}" alt="Trust Wallet">
+            <div class="vertical-card-content">
+                <h2>Trust Wallet</h2>
+                <p>Secure and manage your crypto assets</p>
+                <div class="referral-box">
+                    <a href="https://trustwallet.com/ref/abc456" class="referral-code">abc456</a>
+                    <button class="copy-btn" onclick="copyToClipboard('abc456')">Copy</button>
+                </div>
+            </div>
+        </div>
+        <div class="vertical-card">
+            <img src="{{ url_for('static', filename='images/wallet_ledger.png') }}" alt="Ledger">
+            <div class="vertical-card-content">
+                <h2>Ledger</h2>
+                <p>Hardware wallet for ultimate security</p>
+                <div class="referral-box">
+                    <a href="https://ledger.com/ref/ledger789" class="referral-code">ledger789</a>
+                    <button class="copy-btn" onclick="copyToClipboard('ledger789')">Copy</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Referral Hub. All rights reserved.</p>
+    </footer>
+    <script>
+        function copyToClipboard(code) {
+            navigator.clipboard.writeText(code).then(() => {
+                alert('Referral code copied: ' + code);
+            });
+        }
+    </script>
+</body>
+</html>

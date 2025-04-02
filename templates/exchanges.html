@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Referral Codes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .vertical-card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+        .vertical-card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .vertical-card img {
+            max-width: 150px;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+        .vertical-card-content {
+            flex: 1;
+        }
+        .referral-box {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Crypto Exchanges Referral Hub</h1>
+        <p>Find the best referral codes for cryptocurrency exchanges</p>
+    </header>
+    <main class="vertical-card-container">
+        <div class="vertical-card">
+            <img src="{{ url_for('static', filename='images/exchange_binance.png') }}" alt="Binance">
+            <div class="vertical-card-content">
+                <h2>Binance</h2>
+                <p>Trade cryptocurrencies with the world's leading exchange</p>
+                <div class="referral-box">
+                    <a href="https://binance.com/ref/12345" class="referral-code">12345</a>
+                    <button class="copy-btn" onclick="copyToClipboard('12345')">Copy</button>
+                </div>
+            </div>
+        </div>
+        <div class="vertical-card">
+            <img src="{{ url_for('static', filename='images/exchange_coinbase.png') }}" alt="Coinbase">
+            <div class="vertical-card-content">
+                <h2>Coinbase</h2>
+                <p>Buy, sell, and manage your crypto portfolio</p>
+                <div class="referral-box">
+                    <a href="https://coinbase.com/join/abc123" class="referral-code">abc123</a>
+                    <button class="copy-btn" onclick="copyToClipboard('abc123')">Copy</button>
+                </div>
+            </div>
+        </div>
+        <div class="vertical-card">
+            <img src="{{ url_for('static', filename='images/exchange_kraken.png') }}" alt="Kraken">
+            <div class="vertical-card-content">
+                <h2>Kraken</h2>
+                <p>Secure and reliable cryptocurrency trading platform</p>
+                <div class="referral-box">
+                    <a href="https://kraken.com/ref/kraken789" class="referral-code">kraken789</a>
+                    <button class="copy-btn" onclick="copyToClipboard('kraken789')">Copy</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Referral Hub. All rights reserved.</p>
+    </footer>
+    <script>
+        function copyToClipboard(code) {
+            navigator.clipboard.writeText(code).then(() => {
+                alert('Referral code copied: ' + code);
+            });
+        }
+    </script>
+</body>
+</html>
