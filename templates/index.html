@@ -30,11 +30,15 @@
             text-decoration: none;
             color: #007BFF;
             font-weight: bold;
-            font-size: 1.5em; /* Larger font for links */
+            font-size: 2em; /* Larger font for links */
         }
         .box h2 {
             font-size: 2em; /* Larger font for headings */
             margin-bottom: 20px;
+        }
+        .box p {
+            font-size: 0.9em; /* Smaller font for detailed text */
+            color: #555;
         }
     </style>
 </head>
@@ -46,18 +50,30 @@
     <main class="main-container">
         <div class="box">
             <img src="{{ url_for('static', filename='images/page_exchanges.webp') }}" alt="Exchanges">
-            <h2>Crypto Exchanges</h2>
-            <a href="{{ url_for('exchanges') }}">Explore</a>
+            <a href="{{ url_for('exchanges') }}"><h2>Crypto Exchanges</h2></a>
+            <p> Everyone starts here, because you need to use one of exchanges to bring your money in from a bank account.
+                When you use a crypto exchange (unlike a wallet), you don't need to worry about loosing a seed phrase or forgetting a password.
+                All crypto exchanges require you to go through KYC (Know Your Customer) process, which means you need to provide your ID and SSN, like any other bank.
+            </p>
         </div>
         <div class="box">
             <img src="{{ url_for('static', filename='images/page_wallets.jpg') }}" alt="Wallets">
-            <h2>Crypto Wallets</h2>
-            <a href="{{ url_for('wallets') }}">Explore</a>
+            <a href="{{ url_for('wallets') }}"><h2>Crypto Wallets</h2></a>
+            <p>
+                Wallets are for advanced users. 
+                You are responsible for retaining your seed phrase, because it cannot be changed likt a password.
+                It is very similar to an encrypted disk drive, if you lose the key, you cannot recover what is in it.
+                
+            </p>
         </div>
         <div class="box">
             <img src="{{ url_for('static', filename='images/page_depin.png') }}" alt="Earn Money">
-            <h2>Earn Money</h2>
-            <a href="{{ url_for('depin') }}">Explore</a>
+            <a href="{{ url_for('depin') }}"><h2>Earn Money</h2></a>
+            <p>
+                DePIN projects give you passive income.
+                You can earn $1000 per year by driving your car. 
+                You can earn $50 for sharing your GPU power, and so on.
+            </p>
         </div>
     </main>
     <footer>
