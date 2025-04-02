@@ -25,6 +25,12 @@
             color: #007BFF;
             font-weight: bold;
         }
+        .box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -34,14 +40,17 @@
     </header>
     <main class="main-container">
         <div class="box">
+            <img src="{{ url_for('static', filename='images/page_depin.png') }}" alt="Rewards">
             <h2>Rewards</h2>
             <a href="{{ url_for('depin') }}">Explore</a>
         </div>
         <div class="box">
+            <img src="{{ url_for('static', filename='images/page_exchanges.png') }}" alt="Exchanges">
             <h2>Exchanges</h2>
             <a href="{{ url_for('exchanges') }}">Explore</a>
         </div>
         <div class="box">
+            <img src="{{ url_for('static', filename='images/page_wallets.png') }}" alt="Wallets">
             <h2>Wallets</h2>
             <a href="{{ url_for('wallets') }}">Explore</a>
         </div>
