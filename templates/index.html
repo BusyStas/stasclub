@@ -1,37 +1,62 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Referral Codes Blog</title>    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head><body>
-    <header>        <h1>Web3 & IoT Projects Hub</h1>
-        <p>Discover the best referral opportunities in blockchain and IoT</p>    </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referral Codes Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Web3 & IoT Projects Hub</h1>
+        <p>Discover the best referral opportunities in blockchain and IoT</p>
+    </header>
     <main class="card-container">
-        <div class="card">            <img src="images/project_helium.jfif" alt="Helium Mobile">
-            <h2>Helium Mobile</h2>            <p>Join the decentralized wireless network revolution</p>
-            <a href="helium.html" class="btn">View Referral</a>        </div>
         <div class="card">
-            <img src="images/project_dimo.gif" alt="DIMO Network">            <h2>DIMO</h2>
-            <p>Connect your vehicle to the Web3 ecosystem</p>            <a href="dimo.html" class="btn">View Referral</a>
-        </div>
-        <div class="card">            <img src="images/project_hivello.webp" alt="Hivello">
-            <h2>Hivello</h2>            <p>Earn rewards with digital out-of-home displays</p>
-            <a href="hivello.html" class="btn">View Referral</a>        </div>
-        <div class="card">
-            <img src="images/project_aethir.webp" alt="Aethir">            <h2>Aethir</h2>
-            <p>Decentralized edge computing platform</p>            <a href="aethir.html" class="btn">View Referral</a>
-        </div>
-        <div class="card">            <img src="{{ url_for('static', filename='images/project_mapmetrics.png') }}" alt="MapMetrics">
-            <h2>MapMetrics</h2>            <p>Earn rewards by mapping your surroundings</p>
-            <a href="mapmetrics.html" class="btn">View Referral</a>        </div>
-        <div class="card">
-            <img src="images/project_coin.jpg" alt="Coin App">            <h2>Coin App</h2>
-            <p>Earn cryptocurrency through geomining</p>            <a href="coinapp.html" class="btn">View Referral</a>
+            <img src="{{ url_for('static', filename='images/project_helium.jfif') }}" alt="Helium Mobile">
+            <h2>Helium Mobile</h2>
+            <p>Join the decentralized wireless network revolution</p>
+            <a href="helium.html" class="btn">View Referral</a>
         </div>
         <div class="card">
-            <img src="images/project_xforge.jpg" alt="XForge Phone">            <h2>XForge Phone</h2>
-            <p>Web3-native smartphone for crypto rewards</p>            <a href="xforge.html" class="btn">View Referral</a>
-        </div>    </main>
+            <img src="{{ url_for('static', filename='images/project_dimo.gif') }}" alt="DIMO Network">
+            <h2>DIMO</h2>
+            <p>Connect your vehicle to the Web3 ecosystem</p>
+            <a href="dimo.html" class="btn">View Referral</a>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/project_hivello.webp') }}" alt="Hivello">
+            <h2>Hivello</h2>
+            <p>Earn rewards with digital out-of-home displays</p>
+            <a href="hivello.html" class="btn">View Referral</a>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/project_aethir.webp') }}" alt="Aethir">
+            <h2>Aethir</h2>
+            <p>Decentralized edge computing platform</p>
+            <a href="aethir.html" class="btn">View Referral</a>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/project_mapmetrics.png') }}" alt="MapMetrics">
+            <h2>MapMetrics</h2>
+            <p>Earn rewards by mapping your surroundings</p>
+            <a href="mapmetrics.html" class="btn">View Referral</a>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/project_coin.jpg') }}" alt="Coin App">
+            <h2>Coin App</h2>
+            <p>Earn cryptocurrency through geomining</p>
+            <a href="coinapp.html" class="btn">View Referral</a>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/project_xforge.jpg') }}" alt="XForge Phone">
+            <h2>XForge Phone</h2>
+            <p>Web3-native smartphone for crypto rewards</p>
+            <a href="xforge.html" class="btn">View Referral</a>
+        </div>
+    </main>
     <footer>
-        <p>© 2024 Referral Hub. All rights reserved.</p>    </footer>
+        <p>© 2024 Referral Hub. All rights reserved.</p>
+    </footer>
 </body>
 </html>
