@@ -76,19 +76,41 @@ header h1 {
 }
 
 .referral-code-box {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     padding: 10px 15px;
     background-color: #28a745;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    text-align: center;
-    cursor: pointer;
+    box-sizing: border-box;
 }
 
 .referral-code-box:hover {
     background-color: #218838;
+}
+
+.referral-code {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.copy-btn {
+    background-color: #218838;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.copy-btn:hover {
+    background-color: #1e7e34;
 }
 
 footer {
