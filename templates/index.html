@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
     <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Referral Codes Blog</title>    <link rel="stylesheet" href="styles.css">
+    <title>Referral Codes Blog</title>    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head><body>
     <header>        <h1>Web3 & IoT Projects Hub</h1>
         <p>Discover the best referral opportunities in blockchain and IoT</p>    </header>
@@ -20,7 +20,7 @@
             <img src="images/project_aethir.webp" alt="Aethir">            <h2>Aethir</h2>
             <p>Decentralized edge computing platform</p>            <a href="aethir.html" class="btn">View Referral</a>
         </div>
-        <div class="card">            <img src="images/project_mapmetrics.png" alt="MapMetrics">
+        <div class="card">            <img src="{{ url_for('static', filename='images/project_mapmetrics.png') }}" alt="MapMetrics">
             <h2>MapMetrics</h2>            <p>Earn rewards by mapping your surroundings</p>
             <a href="mapmetrics.html" class="btn">View Referral</a>        </div>
         <div class="card">
