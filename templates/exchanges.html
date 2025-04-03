@@ -15,8 +15,7 @@
         }
         .vertical-card {
             display: flex;
-            flex-direction: row;
-            align-items: flex-start; /* Align items to the top */
+            flex-direction: column; /* Stack content vertically */
             border: 1px solid #ccc;
             border-radius: 8px;
             padding: 20px;
@@ -25,42 +24,23 @@
         }
         .vertical-card img {
             max-width: 150px;
-            margin-right: 20px;
+            margin-bottom: 20px; /* Add spacing below the image */
             border-radius: 8px;
-            align-self: flex-start; /* Ensure the image stays at the top */
+            align-self: flex-start;
         }
         .vertical-card-content {
             flex: 1;
+            margin-bottom: 20px; /* Add spacing below the content */
         }
         .referral-box {
-            margin-top: 10px;
             display: flex;
+            justify-content: space-between; /* Space between referral code and button */
             align-items: center;
-            gap: 10px;
-        }
-        .referral-code {
-            background-color: #f0f0f0; /* Light gray background */
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-weight: bold;
-            text-decoration: none;
-            color: #333; /* Dark text color */
-            border: 1px solid #ccc;
-        }
-        .referral-code:hover {
-            background-color: #e0e0e0; /* Slightly darker gray on hover */
-        }
-        .copy-btn {
-            background-color: #007bff; /* Blue button */
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 0.9rem;
-        }
-        .copy-btn:hover {
-            background-color: #0056b3; /* Darker blue on hover */
+            width: 100%; /* Make it span the full width */
+            background-color: #f9f9f9; /* Optional: Add a background color */
+            padding: 10px;
+            border-top: 1px solid #ccc; /* Optional: Add a border to separate it */
+            border-radius: 0 0 8px 8px; /* Match the card's border radius */
         }
         ul {
             padding-left: 20px; /* Moves the dots to the right */
