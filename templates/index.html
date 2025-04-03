@@ -59,7 +59,9 @@
 </head>
 <body>
     <header class="header">
-        <img src="{{ url_for('static', filename='images/logo/logo-transparent-cropped.png') }}" alt="Logo">
+        <a href="{{ url_for('index') }}">
+            <img src="{{ url_for('static', filename='images/logo/logo-transparent-cropped.png') }}" alt="Logo">
+        </a>
         <h1>Welcome to Crypto Hub</h1>
     </header>
     <main class="main-container">
