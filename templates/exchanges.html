@@ -16,7 +16,7 @@
         .vertical-card {
             display: flex;
             flex-direction: row;
-            align-items: center;
+            align-items: flex-start; /* Align items to the top */
             border: 1px solid #ccc;
             border-radius: 8px;
             padding: 20px;
@@ -27,6 +27,7 @@
             max-width: 150px;
             margin-right: 20px;
             border-radius: 8px;
+            align-self: flex-start; /* Ensure the image stays at the top */
         }
         .vertical-card-content {
             flex: 1;
