@@ -27,13 +27,21 @@
             gap: 60px;
             padding: 60px;
         }
+        .box-container {
+            display: flex;
+            flex-wrap: wrap; /* Enable wrapping for responsiveness */
+            justify-content: center; /* Center align the boxes */
+            gap: 20px; /* Add spacing between boxes */
+        }
         .box {
-            text-align: center;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 60px;
-            width: 600px;
-            box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 20px); /* Adjust width for three boxes with spacing */
+            max-width: 300px; /* Optional: Set a max width for each box */
+            min-width: 200px; /* Optional: Set a minimum width for smaller screens */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for floating effect */
+            border: 1px solid #ccc; /* Optional: Add a border */
+            border-radius: 8px; /* Optional: Add rounded corners */
+            padding: 20px;
+            background-color: #fff; /* Optional: Set background color */
         }
         .box img {
             max-width: 100%;
@@ -65,32 +73,34 @@
         <h1>Welcome to Crypto Hub</h1>
     </header>
     <main class="main-container">
-        <div class="box">
-            <img src="{{ url_for('static', filename='images/page_exchanges.webp') }}" alt="Exchanges">
-            <a href="{{ url_for('exchanges') }}"><h2>Crypto Exchanges</h2></a>
-            <p> Everyone starts here, because you need to use one of exchanges to bring your money in from a bank account.
-                When you use a crypto exchange (unlike a wallet), you don't need to worry about loosing a seed phrase or forgetting a password.
-                All crypto exchanges require you to go through KYC (Know Your Customer) process, which means you need to provide your ID and SSN, like any other bank.
-            </p>
-        </div>
-        <div class="box">
-            <img src="{{ url_for('static', filename='images/page_wallets.jpg') }}" alt="Wallets">
-            <a href="{{ url_for('wallets') }}"><h2>Crypto Wallets</h2></a>
-            <p>
-                Wallets are for advanced users. 
-                You are responsible for retaining your seed phrase, because it cannot be changed likt a password.
-                It is very similar to an encrypted disk drive, if you lose the key, you cannot recover what is in it.
-                
-            </p>
-        </div>
-        <div class="box">
-            <img src="{{ url_for('static', filename='images/page_depin.png') }}" alt="Earn Money">
-            <a href="{{ url_for('depin') }}"><h2>Earn Money</h2></a>
-            <p>
-                DePIN projects give you passive income.
-                You can earn $1000 per year by driving your car. 
-                You can earn $50 for sharing your GPU power, and so on.
-            </p>
+        <div class="box-container">
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/page_exchanges.webp') }}" alt="Exchanges">
+                <a href="{{ url_for('exchanges') }}"><h2>Crypto Exchanges</h2></a>
+                <p> Everyone starts here, because you need to use one of exchanges to bring your money in from a bank account.
+                    When you use a crypto exchange (unlike a wallet), you don't need to worry about loosing a seed phrase or forgetting a password.
+                    All crypto exchanges require you to go through KYC (Know Your Customer) process, which means you need to provide your ID and SSN, like any other bank.
+                </p>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/page_wallets.jpg') }}" alt="Wallets">
+                <a href="{{ url_for('wallets') }}"><h2>Crypto Wallets</h2></a>
+                <p>
+                    Wallets are for advanced users. 
+                    You are responsible for retaining your seed phrase, because it cannot be changed likt a password.
+                    It is very similar to an encrypted disk drive, if you lose the key, you cannot recover what is in it.
+                    
+                </p>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='images/page_depin.png') }}" alt="Earn Money">
+                <a href="{{ url_for('depin') }}"><h2>Earn Money</h2></a>
+                <p>
+                    DePIN projects give you passive income.
+                    You can earn $1000 per year by driving your car. 
+                    You can earn $50 for sharing your GPU power, and so on.
+                </p>
+            </div>
         </div>
     </main>
     <footer>
