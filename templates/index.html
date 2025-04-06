@@ -77,8 +77,10 @@
     <main class="main-container">
         <div class="card-container">
             <div class="card">
-                <img src="{{ url_for('static', filename='images/page_exchanges_cropped2.webp') }}" alt="Exchanges">
-                <a href="{{ url_for('exchanges') }}"><h2>Crypto Exchanges</h2></a>
+                <a href="{{ url_for('exchanges') }}">
+                    <img src="{{ url_for('static', filename='images/page_exchanges_cropped2.webp') }}" alt="Exchanges">
+                    <h2>Crypto Exchanges</h2>
+                </a>
                 <p> Everyone starts here, because only an exchange allows you take money from a bank account and buy crypto.
                     When you use a crypto exchange (unlike a wallet), you don't need to worry about loosing a seed phrase or forgetting a password.
                     All crypto exchanges require you to go through KYC (Know Your Customer) process, 
@@ -86,8 +88,10 @@
                 </p>
             </div>
             <div class="card">
-                <img src="{{ url_for('static', filename='images/page_wallets.jpg') }}" alt="Wallets">
-                <a href="{{ url_for('wallets') }}"><h2>Crypto Wallets</h2></a>
+                <a href="{{ url_for('wallets') }}">
+                    <img src="{{ url_for('static', filename='images/page_wallets.jpg') }}" alt="Wallets">
+                    <h2>Crypto Wallets</h2>
+                </a>
                 <p>
                     Wallets are for advanced users.
                     You cannot participate in Token Pre-Sale if you don't have a wallet,

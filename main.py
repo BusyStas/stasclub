@@ -31,4 +31,4 @@ def hard_wallets():
     return render_template('hard_wallets.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=8080, debug=True)
