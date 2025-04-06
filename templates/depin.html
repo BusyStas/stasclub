@@ -9,8 +9,10 @@
 </head>
 <body>
     <header>
-        <h1>Web3 & IoT Projects Hub</h1>
-        <p>Discover the best referral opportunities in blockchain and IoT</p>
+        <a href="{{ url_for('index') }}">
+            <img src="{{ url_for('static', filename='images/logo/logo-transparent-cropped.png') }}" alt="Logo">
+        </a>
+        <h1>DePIN - Crypto Projects to Earn Money</h1>
     </header>
     <main class="card-container">
         <div class="card">
@@ -114,7 +116,7 @@
         </div>
     </main>
     <footer>
-        <p>© 2024 Referral Hub. All rights reserved.</p>
+        {% include 'partials/disclaimer.html' %}
     </footer>
     <script>
         function copyToClipboard(code) {
