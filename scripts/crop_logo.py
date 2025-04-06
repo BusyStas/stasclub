@@ -19,13 +19,13 @@ def crop_image(image_path, output_path, left_crop=0, right_crop=0):
 # Crop page_exchanges.webp from the right
 crop_image(
     "/workspaces/stasclub/static/images/page_exchanges.webp",
-    "/workspaces/stasclub/static/images/page_exchanges_cropped.webp",
-    right_crop=50  # Adjust this value as needed
+    "/workspaces/stasclub/static/images/page_exchanges_cropped2.webp",
+    right_crop=120  # Adjust this value as needed
 )
 
 # Crop page_depin.png from the left
 crop_image(
     "/workspaces/stasclub/static/images/page_depin.png",
-    "/workspaces/stasclub/static/images/page_depin_cropped.png",
-    left_crop=50  # Adjust this value as needed
+    "/workspaces/stasclub/static/images/page_depin_cropped2.png",
+    left_crop=90  # Adjust this value as needed
 )
