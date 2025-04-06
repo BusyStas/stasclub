@@ -34,7 +34,7 @@
             gap: 20px; /* Add spacing between boxes */
         }
         .box {
-            flex: 1 1 calc(33.333% - 20px); /* Adjust width for three boxes with spacing */
+            flex: 1 1 calc(33.333% - 20px); /* Default: three boxes per row */
             max-width: 30%; /* Optional: Set a max width for each box */
             min-width: 200px; /* Optional: Set a minimum width for smaller screens */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for floating effect */
@@ -43,26 +43,12 @@
             padding: 20px;
             background-color: #fff; /* Optional: Set background color */
         }
-        .box img {
-            height: 300px;
-            width: auto;
-            border-radius: 8px;
-            margin: 0 auto 30px; /* Center the image horizontally and add bottom margin */
-            display: block; /* Ensure the image behaves as a block element */
-        }
-        .box a {
-            text-decoration: none;
-            color: #007BFF;
-            font-weight: bold;
-            font-size: 2em;
-        }
-        .box h2 {
-            font-size: 1em;
-            margin-bottom: 20px;
-        }
-        .box p {
-            font-size: 0.9em;
-            color: #555;
+
+        @media (max-width: 768px) {
+            .box {
+                flex: 1 1 100%; /* Stack boxes vertically on narrow screens */
+                max-width: 100%; /* Ensure full width */
+            }
         }
     </style>
 </head>
