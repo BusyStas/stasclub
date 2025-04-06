@@ -28,9 +28,9 @@ header h1 {
 }
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem; /* Reduce gap between cards */
-    padding: 1.5rem; /* Reduce padding around the card container */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Increase minimum card width */
+    gap: 2rem; /* Adjust gap between cards */
+    padding: 2rem; /* Adjust padding around the card container */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -49,18 +49,20 @@ header h1 {
 
 .card img {
     width: 100%;
-    height: 180px; /* Reduce image height */
+    height: 300px; /* Increase image height */
     object-fit: cover;
     object-position: center;
 }
 
 .card h2 {
-    padding: 0.8rem; /* Reduce padding around the title */
+    padding: 1rem; /* Adjust padding around the title */
+    font-size: 1.5rem; /* Increase font size */
     color: #333;
 }
 
 .card p {
-    padding: 0 0.8rem; /* Reduce padding around the text */
+    padding: 0 1rem; /* Adjust padding around the text */
+    font-size: 1rem; /* Increase font size */
     color: #666;
 }
 
