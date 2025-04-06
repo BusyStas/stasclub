@@ -24,30 +24,30 @@
         .main-container {
             display: flex;
             justify-content: center;
-            gap: 60px;
-            padding: 60px;
+            gap: 40px; /* Reduce gap between sections */
+            padding: 40px; /* Reduce padding around the main container */
         }
         .box-container {
             display: flex;
             flex-wrap: wrap; /* Enable wrapping for responsiveness */
             justify-content: center; /* Center align the boxes */
-            gap: 20px; /* Add spacing between boxes */
+            gap: 15px; /* Reduce spacing between boxes */
         }
         .box {
-            flex: 1 1 calc(33.333% - 20px); /* Adjust width for three boxes with spacing */
+            flex: 1 1 calc(33.333% - 15px); /* Adjust width for three boxes with reduced spacing */
             max-width: 30%; /* Optional: Set a max width for each box */
             min-width: 200px; /* Optional: Set a minimum width for smaller screens */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for floating effect */
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Slightly reduce shadow size */
             border: 1px solid #ccc; /* Optional: Add a border */
             border-radius: 8px; /* Optional: Add rounded corners */
-            padding: 20px;
+            padding: 15px; /* Reduce padding inside each box */
             background-color: #fff; /* Optional: Set background color */
         }
         .box img {
-            height: 300px;
+            height: 250px; /* Reduce image height */
             width: auto;
             border-radius: 8px;
-            margin: 0 auto 30px; /* Center the image horizontally and add bottom margin */
+            margin: 0 auto 20px; /* Reduce bottom margin */
             display: block; /* Ensure the image behaves as a block element */
         }
         .box a {

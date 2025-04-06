@@ -29,8 +29,8 @@ header h1 {
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
+    gap: 1.5rem; /* Reduce gap between cards */
+    padding: 1.5rem; /* Reduce padding around the card container */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -39,7 +39,7 @@ header h1 {
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slightly reduce shadow size */
     transition: transform 0.3s ease;
 }
 
@@ -49,18 +49,18 @@ header h1 {
 
 .card img {
     width: 100%;
-    height: 200px;
+    height: 180px; /* Reduce image height */
     object-fit: cover;
     object-position: center;
 }
 
 .card h2 {
-    padding: 1rem;
+    padding: 0.8rem; /* Reduce padding around the title */
     color: #333;
 }
 
 .card p {
-    padding: 0 1rem;
+    padding: 0 0.8rem; /* Reduce padding around the text */
     color: #666;
 }
 
