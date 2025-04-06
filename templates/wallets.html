@@ -38,8 +38,11 @@
 </head>
 <body>
     <header>
-        <h1>Crypto Wallets Referral Hub</h1>
-        <p>Find the best referral codes for cryptocurrency wallets</p>
+        <a href="{{ url_for('index') }}">
+            <img src="{{ url_for('static', filename='images/logo/logo-transparent-cropped.png') }}" alt="Logo">
+        </a>
+        <h1>Crypto Wallets</h1>
+        {% include 'partials/header_navigation.html' %}
     </header>
     <main class="vertical-card-container">
         <div class="vertical-card">
