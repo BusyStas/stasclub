@@ -22,10 +22,11 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
-.header img {
-    height: 100px; /* Adjust the logo size */
+header img {
+    height: 60px; /* Reduce the logo size globally */
     margin-right: 20px;
 }
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Increase minimum card width */
