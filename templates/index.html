@@ -78,16 +78,20 @@
             <div class="card">
                 <img src="{{ url_for('static', filename='images/page_exchanges_cropped2.webp') }}" alt="Exchanges">
                 <a href="{{ url_for('exchanges') }}"><h2>Crypto Exchanges</h2></a>
-                <p> Everyone starts here, because you need to use one of exchanges to bring your money in from a bank account.
+                <p> Everyone starts here, because only an exchange allows you take money from a bank account and buy crypto.
                     When you use a crypto exchange (unlike a wallet), you don't need to worry about loosing a seed phrase or forgetting a password.
-                    All crypto exchanges require you to go through KYC (Know Your Customer) process, which means you need to provide your ID and SSN, like any other bank.
+                    All crypto exchanges require you to go through KYC (Know Your Customer) process, 
+                        which means you need to provide your ID and SSN, like any other bank.
                 </p>
             </div>
             <div class="card">
                 <img src="{{ url_for('static', filename='images/page_wallets.jpg') }}" alt="Wallets">
                 <a href="{{ url_for('wallets') }}"><h2>Crypto Wallets</h2></a>
                 <p>
-                    Wallets are for advanced users. 
+                    Wallets are for advanced users.
+                    You cannot participate in Token Pre-Sale if you don't have a wallet,
+                        because they all use "Connect Wallet" and you cannot use an exchange for this.
+                    You need to use a wallet if you want to earn money in crypto projects. 
                     You are responsible for retaining your seed phrase, because it cannot be changed likt a password.
                     It is very similar to an encrypted disk drive, if you lose the key, you cannot recover what is in it.
                     
