@@ -41,8 +41,10 @@
         <a href="{{ url_for('index') }}">
             <img src="{{ url_for('static', filename='images/logo/logo-transparent-cropped.png') }}" alt="Logo">
         </a>
-        <h1>Crypto Wallets</h1>
-        {% include 'partials/header_navigation.html' %}
+        <div>
+            <h1>Crypto Wallets</h1>
+            {% include 'partials/header_navigation.html' %}
+        </div>
     </header>
     <main class="vertical-card-container">
         <div class="vertical-card">

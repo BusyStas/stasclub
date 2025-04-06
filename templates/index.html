@@ -71,8 +71,10 @@
         <a href="{{ url_for('index') }}">
             <img src="{{ url_for('static', filename='images/logo/logo-transparent-cropped.png') }}" alt="Logo">
         </a>
-        <h1>Welcome to Crypto Hub</h1>
-        {% include 'partials/header_navigation.html' %}
+        <div>
+            <h1>Welcome to Crypto Hub</h1>
+            {% include 'partials/header_navigation.html' %}
+        </div>
     </header>
     <main class="main-container">
         <div class="card-container">
