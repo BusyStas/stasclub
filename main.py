@@ -18,6 +18,17 @@ def exchanges():
 def wallets():
     return render_template('wallets.html')
 
+@app.route('/fidelity')
+def fidelity():
+    return render_template('fidelity.html')
+
+@app.route('/presale')
+def presale():
+    return render_template('presale.html')
+
+@app.route('/hard_wallets')
+def hard_wallets():
+    return render_template('hard_wallets.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
