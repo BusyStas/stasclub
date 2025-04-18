@@ -202,3 +202,15 @@ footer {
     font-size: 1.2rem; /* Slightly larger font for readability */
     color: #495057; /* Subtle text color */
 }
+
+.content-section {
+    padding: 20px; /* Add padding around the content */
+}
+
+.content-section section {
+    margin-bottom: 30px; /* Add space after each section */
+}
+
+.content-section ul {
+    padding-left: 20px; /* Increase indentation for list items */
+}
