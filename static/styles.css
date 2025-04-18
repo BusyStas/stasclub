@@ -214,3 +214,25 @@ footer {
 .content-section ul {
     padding-left: 20px; /* Increase indentation for list items */
 }
+
+.analogy-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.analogy-th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    text-align: left;
+}
+
+.analogy-tr {
+    border: 1px solid #ddd;
+}
+
+.analogy-td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
