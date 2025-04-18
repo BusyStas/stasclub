@@ -24,7 +24,8 @@
         }
         .main-container {
             display: flex;
-            justify-content: center;
+            flex-direction: column; /* Adjust layout to accommodate intro card */
+            align-items: center; /* Center align the intro card */
             gap: 40px; /* Reduce gap between sections */
             padding: 40px; /* Reduce padding around the main container */
         }
@@ -78,6 +79,18 @@
         </div>
     </header>
     <main class="main-container">
+        <div class="cardintro">
+            <img src="{{ url_for('static', filename='images/page_analogy_ny.jfif') }}" alt="Start Here">
+            <div class="cardintro-text">
+                <a href="{{ url_for('index') }}">
+                    <h2>Start Here! Learn about Crypto!</h2>
+                </a>
+                <p>
+                    Discover the reasons behind investing in cryptocurrency and how it can transform your financial future. 
+                    Learn the basics, explore opportunities, and understand the risks involved in this revolutionary market.
+                </p>
+            </div>
+        </div>
         <div class="card-container">
             <div class="card">
                 <a href="{{ url_for('exchanges') }}">

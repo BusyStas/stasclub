@@ -158,3 +158,41 @@ footer {
         padding: 1rem;
     }
 }
+
+.cardintro {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Add spacing between the image and text */
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #e9ecef; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* Increase width to make it wider */
+}
+
+.cardintro img {
+    height: 300px; /* Set image height */
+    width: auto;
+    border-radius: 0; /* Remove border radius for the image */
+    margin: 0; /* Remove all margins around the image */
+    display: block; /* Ensure the image behaves as a block element */
+    object-fit: cover; /* Ensure the image covers the available space */
+    object-position: left top; /* Align the image to the top-left corner */
+}
+
+.cardintro-text {
+    flex: 1; /* Allow text to take remaining space */
+    text-align: left; /* Align text to the left */
+}
+
+.cardintro h2 {
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    color: #343a40; /* Darker text color */
+    margin-bottom: 15px;
+}
+
+.cardintro p {
+    font-size: 1.2rem; /* Slightly larger font for readability */
+    color: #495057; /* Subtle text color */
+}
