@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'partials/header_google_analytics.html' %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about cryptocurrency pre-sales (ICOs) and how to participate in early-stage crypto projects.">
+    <meta name="keywords" content="crypto presale, ICO, initial coin offering, early-stage crypto projects">
+    <title>Pre-Sale (ICO)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <a href="{{ url_for('index') }}" style="text-decoration: none;">
+            <img src="{{ url_for('static', filename='images/logo/logo-transparent-cropped.png') }}" alt="Logo">
+        </a>
+        <div>
+            <h1>Pre-Sale (ICO)</h1>
+            {% include 'partials/header_navigation.html' %}
+        </div>
+    </header>
+    <main class="main-container">
+        <div class="content-section">
+            <section>
+                <h2>What is a Pre-Sale (ICO)?</h2>
+                <p>
+                    Initial Coin Offerings (ICOs) allow investors to participate in early-stage cryptocurrency projects. Learn how to identify promising ICOs and invest wisely.
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        {% include 'partials/disclaimer.html' %}
+    </footer>
+</body>
+</html>

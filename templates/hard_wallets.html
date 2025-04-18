@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'partials/header_google_analytics.html' %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about hard wallets and how they provide secure storage for your cryptocurrencies.">
+    <meta name="keywords" content="hard wallets, crypto wallets, secure crypto storage, Ledger, Trezor">
+    <title>Hard Wallets</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <a href="{{ url_for('index') }}" style="text-decoration: none;">
+            <img src="{{ url_for('static', filename='images/logo/logo-transparent-cropped.png') }}" alt="Logo">
+        </a>
+        <div>
+            <h1>Hard Wallets</h1>
+            {% include 'partials/header_navigation.html' %}
+        </div>
+    </header>
+    <main class="main-container">
+        <div class="content-section">
+            <section>
+                <h2>Why Use a Hard Wallet?</h2>
+                <p>
+                    Hard wallets like Ledger and Trezor provide secure offline storage for your cryptocurrencies, protecting them from online threats.
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        {% include 'partials/disclaimer.html' %}
+    </footer>
+</body>
+</html>

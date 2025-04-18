@@ -34,5 +34,9 @@ def presale():
 def hard_wallets():
     return render_template('hard_wallets.html')
 
+@app.route('/mining')
+def mining():
+    return render_template('mining.html')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)

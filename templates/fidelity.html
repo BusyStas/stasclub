@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'partials/header_google_analytics.html' %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Fidelity Investments and how you can invest in cryptocurrencies like Bitcoin and Ethereum.">
+    <meta name="keywords" content="Fidelity Investments, crypto investing, Bitcoin, Ethereum, Fidelity crypto">
+    <title>Fidelity Investments</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <a href="{{ url_for('index') }}" style="text-decoration: none;">
+            <img src="{{ url_for('static', filename='images/logo/logo-transparent-cropped.png') }}" alt="Logo">
+        </a>
+        <div>
+            <h1>Fidelity Investments</h1>
+            {% include 'partials/header_navigation.html' %}
+        </div>
+    </header>
+    <main class="main-container">
+        <div class="content-section">
+            <section>
+                <h2>Investing in Crypto with Fidelity</h2>
+                <p>
+                    Fidelity Investments now offers cryptocurrency investment options, including Bitcoin and Ethereum. Learn how to diversify your portfolio with crypto.
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        {% include 'partials/disclaimer.html' %}
+    </footer>
+</body>
+</html>
