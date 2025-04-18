@@ -4,6 +4,8 @@
     {% include 'partials/header_google_analytics.html' %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Crypto Hub. Discover crypto exchanges, wallets, and projects to earn money. Learn why investing in crypto is the future.">
+    <meta name="keywords" content="crypto hub, crypto exchanges, crypto wallets, earn money with crypto, investing in cryptocurrency">
     <title>Crypto Hub</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
@@ -82,7 +84,7 @@
         <div class="cardintro">
             <img src="{{ url_for('static', filename='images/page_analogy_ny.jfif') }}" alt="Start Here">
             <div class="cardintro-text">
-                <a href="{{ url_for('analogy') }}" style="text-decoration: none;">
+                <a href="{{ url_for('index') }}" style="text-decoration: none;">
                     <h2>Start Here! Learn about Crypto!</h2>
                 </a>
                 <p>
