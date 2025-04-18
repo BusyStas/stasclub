@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'partials/header_google_analytics.html' %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Invest in Crypto?</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <a href="{{ url_for('index') }}" style="text-decoration: none;">
+            <img src="{{ url_for('static', filename='images/logo/logo-transparent-cropped.png') }}" alt="Logo">
+        </a>
+        <div>
+            <h1>Why Invest in Crypto?</h1>
+            {% include 'partials/header_navigation.html' %}
+        </div>
+    </header>
+    <main class="main-container">
+        <section>
+            <h2>History of Stock Trading</h2>
+            Look how the stock market evolved over the years, and the History repeats itself.
+            <p>
+                <b>1792</b> - NY Stock Exchange was founded. 
+            </p>
+            <p>
+                <b>1867</b> - NYSE installed the first stock ticker. 
+                    Enabled real-time price updates for traders, vastly improving market efficiency and communication.
+            </p>
+            <p>
+                <b>1920</b> - Retail investors flooded in. 
+                    Stock trading became mainstream among the public
+            </p>
+            <p>
+                <b>1960</b> - It is a global financial hub. Massive institutional and public participation
+            </p>
+            <p>
+                <b>1990</b> - the 401(k) was the default retirement plan for most U.S. employers. 
+                    Surge in retail investing.
+                    It made millions of everyday Americans stock market participants—many for the first time.
+            </p>
+        </section>
+
+        <section>
+            <h2>History of Crypto Trading</h2>
+            Let's compare how Crypto Trading is evolving.
+            <p>
+                <b>2009</b> - Bitcoin was created. 
+                    The first decentralized cryptocurrency, paving the way for the entire crypto market.
+            </p> <p>
+                <b>2010</b> - First bitcoin purchase. 
+                    On May 22th. A developer named Laszlo Hanyecz paid 10,000 BTC for two Papa John’s pizzas 
+                    ($41 that time, or $1.2 billion dollars in today's prices).
+            </p>
+            <p>
+                <b>2012</b> - Coinbase was founded in the U.S. 
+                    The first decentralized cryptocurrency, paving the way for the entire crypto market.
+            </p>
+            <p>
+                <b>2015</b> - Ethereum was launched. 
+                    Introduced smart contracts and decentralized applications (dApps), expanding the use cases of blockchain technology.
+            </p>
+            <p>
+                <b>2017</b> - Initial Coin Offerings became a popular fundraising method for new projects, leading to a surge in new cryptocurrencies.
+            </p>
+            <p>
+                <b>2017</b> - Binance launched and quickly became the world’s largest exchange.
+            </p>
+            <p>
+                <b>2020</b> - Institutions entered the game.
+                    Companies like Tesla, Square, and MicroStrategy added Bitcoin to balance sheets. Crypto ETFs and custodians emerged.
+            </p>
+            <p>
+                <b>2024</b> - Crypto is approaching mainstream adoption.
+                Spot Bitcoin ETFs were approved. 401(k) providers began offering crypto exposure. Regulation, compliance, and Wall Street interest surged.
+            </p>
+    </main>
+    <footer>
+        {% include 'partials/disclaimer.html' %}
+    </footer>
+</body>
+</html>

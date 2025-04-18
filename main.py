@@ -6,6 +6,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/analogy')
+def analogy():
+    return render_template('analogy.html')
+
 @app.route('/depin')
 def depin():
     return render_template('depin.html')
