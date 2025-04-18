@@ -236,3 +236,21 @@ footer {
     padding: 10px;
     border: 1px solid #ddd;
 }
+
+.fidelity-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.fidelity-th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    text-align: left;
+}
+
+.fidelity-td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
