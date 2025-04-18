@@ -118,9 +118,15 @@ header img {
 }
 
 .referral-code {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+    color: #ffffff; /* White color */
+    font-weight: bold; /* Keep the text bold */
+    font-size: 1rem; /* Slightly bigger font size */
+    text-decoration: none; /* Remove underline */
+}
+
+.referral-code:hover {
+    color: #f8f9fa; /* Slightly lighter white on hover */
+    text-decoration: none; /* Ensure no underline appears on hover */
 }
 
 .copy-btn {
