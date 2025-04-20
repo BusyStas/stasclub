@@ -9,6 +9,11 @@
     <title>Fidelity Investments</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <style>
+        .fidelity-th:nth-child(2), .fidelity-td:nth-child(2) {
+            white-space: nowrap;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -137,6 +142,15 @@
 
                             </td>
                         </tr>
+                        <tr>
+                            <td class="fidelity-td">LTCN</td>
+                            <td class="fidelity-td">
+                                <a href="https://digital.fidelity.com/prgw/digital/research/quote/dashboard/summary?symbol=LTCN" target="_blank">
+                                    Grayscale Litecoin Trust
+                                </a>
+                            </td>
+                            <td class="fidelity-td">A trust that provides exposure to Litecoin ($LTC) without direct ownership.</td>
+                        </tr>
                     </tbody>
                 </table>
             </section>
@@ -167,21 +181,12 @@
                         <tr>
                             <td class="fidelity-td">HOOD</td>
                             <td class="fidelity-td">
-                                <a href="https://digital.fidelity.com/prgw/digital/research/quote/dashboard/summary?symbol=HOOD" target="_blank"></a>
+                                <a href="https://digital.fidelity.com/prgw/digital/research/quote/dashboard/summary?symbol=HOOD" target="_blank">
                                     Robinhood Markets Inc.
                                 </a>
                             </td>
                             <td class="fidelity-td">A financial services platform offering commission-free trading, including cryptocurrencies.</td>
-                        </tr>
-                        <tr>
-                            <td class="fidelity-td">CDE</td>
-                            <td class="fidelity-td">
-                                <a href="https://digital.fidelity.com/prgw/digital/research/quote/dashboard/summary?symbol=CDE" target="_blank">
-                                    Crypto Diversified ETF
-                                </a>
-                            </td>
-                            <td class="fidelity-td">An ETF that provides diversified exposure to multiple cryptocurrencies.</td>
-                        </tr>
+                        </tr> 
                         <tr>
                             <td class="fidelity-td">BKCH</td>
                             <td class="fidelity-td">
@@ -190,6 +195,24 @@
                                 </a>
                             </td>
                             <td class="fidelity-td">An ETF focusing on companies involved in blockchain technology.</td>
+                        </tr>
+                        <tr>
+                            <td class="fidelity-td">BLOK</td>
+                            <td class="fidelity-td">
+                                <a href="https://digital.fidelity.com/prgw/digital/research/quote/dashboard/summary?symbol=BLOK" target="_blank">
+                                    Amplify Transformational Data Sharing ETF
+                                </a>
+                            </td>
+                            <td class="fidelity-td">An ETF focusing on companies involved in blockchain technology and data sharing.</td>
+                        </tr>
+                        <tr>
+                            <td class="fidelity-td">XYZ</td>
+                            <td class="fidelity-td">
+                                <a href="https://digital.fidelity.com/prgw/digital/research/quote/dashboard/summary?symbol=XYZ" target="_blank">
+                                    XYZ Blockchain Solutions
+                                </a>
+                            </td>
+                            <td class="fidelity-td">A company specializing in blockchain-based enterprise solutions and services.</td>
                         </tr>
                     </tbody>
                 </table>
