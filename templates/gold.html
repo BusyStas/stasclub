@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'partials/header_google_analytics.html' %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about investing in gold and silver and their roles in diversifying your portfolio.">
+    <meta name="keywords" content="gold investing, silver investing, portfolio diversification, gold market, silver market">
+    <title>Gold and Silver Investments</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('index') }}">
+            <img src="{{ url_for('static', filename='images/logo/logo-transparent-cropped.png') }}" alt="Logo" style="height: 60px;">
+        </a>
+        <div>
+            <h1>Gold and Silver</h1>
+            {% include 'partials/header_navigation.html' %}
+        </div>
+    </header>
+    <main class="content-section">
+        <section>
+            <h2>Cryptocurrencies that mimic the behavior of gold?</h2>
+            <p>
+                Did you know that you can crypto-tokenized buy gold and silver?
+                There are tokens that are meant to mimic gold and silver prices.
+                These tokens are backed by physical gold and silver, allowing you to invest in these precious metals
+                     without the need for physical storage.
+                
+            </p>
+        </section>
+        
+        
+    </main>
+    <footer>
+        {% include 'partials/disclaimer.html' %}
+    </footer>
+</body>
+</html>

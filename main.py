@@ -38,5 +38,9 @@ def hard_wallets():
 def mining():
     return render_template('mining.html')
 
+@app.route('/gold')
+def gold():
+    return render_template('gold.html')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)
