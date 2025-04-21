@@ -249,6 +249,27 @@
                 alert('Referral code copied: ' + code);
             });
         }
+
+        function adjustForSmallScreens() {
+            const cards = document.querySelectorAll('.vertical-card img');
+            if (window.innerWidth < 768) {
+                cards.forEach(card => {
+                    card.style.maxWidth = '40px'; // Reduce image width to 5 times smaller
+                    card.style.height = 'auto'; // Maintain aspect ratio
+                });
+            } else {
+                cards.forEach(card => {
+                    card.style.maxWidth = '200px'; // Restore default image width
+                    card.style.height = 'auto'; // Maintain aspect ratio
+                });
+            }
+        }
+
+        // Run on page load
+        adjustForSmallScreens();
+
+        // Run on window resize
+        window.addEventListener('resize', adjustForSmallScreens);
     </script>
 </body>
 </html>
