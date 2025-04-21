@@ -176,6 +176,38 @@ footer {
     header {
         padding: 1rem;
     }
+
+    .header img {
+        height: 60px; /* Reduce logo size */
+    }
+
+    .box img {
+        height: 200px; /* Reduce image height */
+    }
+
+    .box {
+        flex: 1 1 100%; /* Make boxes take full width */
+        max-width: 100%; /* Ensure boxes don't exceed the screen width */
+    }
+
+    .main-container {
+        gap: 20px; /* Reduce gap between sections */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .cardintro img {
+        height: 150px; /* Reduce intro image size */
+        width: auto;
+        max-width: 100%; /* Ensure the image scales down for smaller screens */
+    }
+
+    .cardintro-text h2 {
+        font-size: 1.5em; /* Adjust heading size */
+    }
+
+    .cardintro-text p {
+        font-size: 0.9em; /* Adjust paragraph size */
+    }
 }
 
 .cardintro {
@@ -191,13 +223,13 @@ footer {
 }
 
 .cardintro img {
-    height: 300px; /* Set image height */
-    width: auto;
+    max-width: 30%; /* Ensure the image does not exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the available space */
+    object-position: center; /* Center the image */
     border-radius: 0; /* Remove border radius for the image */
     margin: 0; /* Remove all margins around the image */
     display: block; /* Ensure the image behaves as a block element */
-    object-fit: cover; /* Ensure the image covers the available space */
-    object-position: left top; /* Align the image to the top-left corner */
 }
 
 .cardintro-text {
