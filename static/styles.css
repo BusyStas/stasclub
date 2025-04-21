@@ -67,11 +67,14 @@ header img {
 }
 
 .card a {
-    color: inherit; /* Ensure links inside cards inherit the card's text color */
+    display: block; /* Make the entire card clickable */
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color from the card */
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Add hover effect for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance hover shadow */
 }
 
 .card img {
