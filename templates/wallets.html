@@ -46,6 +46,12 @@
             border-top: 1px solid #ccc;
             border-radius: 0 0 8px 8px;
         }
+        ul {
+            padding-left: 20px; /* Add padding to move the bullets to the right */
+        }
+        li {
+            margin-left: 10px; /* Add spacing between the bullet and the text */
+        }
     </style>
 </head>
 <body>
@@ -59,11 +65,34 @@
         </div>
     </header>
     <main class="vertical-card-container">
+        <section>
+            <h2>Why would you need a custodial wallet?</h2>
+            <p>
+                If you only invest in crypto exchanges, you don't need a wallet. 
+                You will need a wallet if you want to use DePIN projects, or send or receive crypto from your friends, 
+                    buy tokens on a pre-sale (ICO), and etc.
+                If you end up needing a wallet, you just need all of these. 
+                MetaMask is the leading wallet that 95% of basic users will find sufficient for their needs,
+                    but other wallets have their own unique features and advantages, 
+                        and if you want to get most of crypto, you need to have many wallets.
+                Also, non-custodian wallets are for advanced users, 
+                    and you need to be careful with them, as you are responsible for your own keys, 
+                        and if you loose your keys you can loose all your money in it.
+
+                
+            </p>
+        </section>
         <div class="vertical-card" id="metamask">
             <img src="{{ url_for('static', filename='images/wallets/wallet_metamask.webp') }}" alt="MetaMask">
             <div class="vertical-card-content">
                 <h2>MetaMask</h2>
-                <p>Your gateway to blockchain applications</p>
+                <p>Your gateway to blockchain applications
+                    <ul>
+                        <li>
+                            When you use <b>Connect Wallet</b> in the browser, I found MetaMask to be the only wallet that always works
+                        </li>
+                    </ul>
+                </p>
                 <div class="referral-box">
                     <a href="https://metamask.io/ref/xyz123" class="referral-code" target="_blank">xyz123</a>
                     <button class="copy-btn" onclick="copyToClipboard('xyz123')">Copy</button>
@@ -74,7 +103,13 @@
             <img src="{{ url_for('static', filename='images/wallets/wallet_coinbase.webp') }}" alt="Coinbase Wallet">
             <div class="vertical-card-content">
                 <h2>Coinbase Wallet</h2>
-                <p>Securely store and manage your crypto assets</p>
+                <p>Securely store and manage your crypto assets
+                    <ul>
+                        <li>
+                            Coinbase Wallet is easy to use and integrates seamlessly with the Coinbase exchange
+                        </li>
+                    </ul>
+                </p>
                 <div class="referral-box">
                     <a href="https://coinbase.com/ref/coinbase123" class="referral-code" target="_blank">coinbase123</a>
                     <button class="copy-btn" onclick="copyToClipboard('coinbase123')">Copy</button>
