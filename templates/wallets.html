@@ -48,7 +48,18 @@
         </div>
     </header>
     <main class="vertical-card-container">
-        <div class="vertical-card">
+        <div class="vertical-card" id="speed-wallet">
+            <img src="{{ url_for('static', filename='images/wallet_speed.png') }}" alt="Speed Wallet">
+            <div class="vertical-card-content">
+                <h2>Speed Wallet</h2>
+                <p>Fast and secure wallet for all your crypto needs</p>
+                <div class="referral-box">
+                    <a href="https://speedwallet.com/ref/speed123" class="referral-code" target="_blank">speed123</a>
+                    <button class="copy-btn" onclick="copyToClipboard('speed123')">Copy</button>
+                </div>
+            </div>
+        </div>
+        <div class="vertical-card" id="metamask">
             <img src="{{ url_for('static', filename='images/wallet_metamask.png') }}" alt="MetaMask">
             <div class="vertical-card-content">
                 <h2>MetaMask</h2>
@@ -59,7 +70,7 @@
                 </div>
             </div>
         </div>
-        <div class="vertical-card">
+        <div class="vertical-card" id="trust-wallet">
             <img src="{{ url_for('static', filename='images/wallet_trustwallet.png') }}" alt="Trust Wallet">
             <div class="vertical-card-content">
                 <h2>Trust Wallet</h2>
@@ -70,7 +81,7 @@
                 </div>
             </div>
         </div>
-        <div class="vertical-card">
+        <div class="vertical-card" id="ledger">
             <img src="{{ url_for('static', filename='images/wallet_ledger.png') }}" alt="Ledger">
             <div class="vertical-card-content">
                 <h2>Ledger</h2>
@@ -81,7 +92,7 @@
                 </div>
             </div>
         </div>
-        <div class="vertical-card">
+        <div class="vertical-card" id="coinbase-wallet">
             <img src="{{ url_for('static', filename='images/wallet_coinbase.png') }}" alt="Coinbase Wallet">
             <div class="vertical-card-content">
                 <h2>Coinbase Wallet</h2>
@@ -92,7 +103,7 @@
                 </div>
             </div>
         </div>
-        <div class="vertical-card">
+        <div class="vertical-card" id="bestwallet">
             <img src="{{ url_for('static', filename='images/wallet_bestwallet.png') }}" alt="BestWallet">
             <div class="vertical-card-content">
                 <h2>BestWallet</h2>
@@ -103,7 +114,7 @@
                 </div>
             </div>
         </div>
-        <div class="vertical-card">
+        <div class="vertical-card" id="phantom-wallet">
             <img src="{{ url_for('static', filename='images/wallet_phantom.png') }}" alt="Phantom Wallet">
             <div class="vertical-card-content">
                 <h2>Phantom Wallet</h2>
@@ -114,7 +125,7 @@
                 </div>
             </div>
         </div>
-        <div class="vertical-card">
+        <div class="vertical-card" id="cake-wallet">
             <img src="{{ url_for('static', filename='images/wallet_cake.png') }}" alt="Cake Wallet">
             <div class="vertical-card-content">
                 <h2>Cake Wallet</h2>
@@ -125,7 +136,7 @@
                 </div>
             </div>
         </div>
-        <div class="vertical-card">
+        <div class="vertical-card" id="exodus-wallet">
             <img src="{{ url_for('static', filename='images/wallet_exodus.png') }}" alt="Exodus Wallet">
             <div class="vertical-card-content">
                 <h2>Exodus Wallet</h2>
