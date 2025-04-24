@@ -42,5 +42,9 @@ def mining():
 def gold():
     return render_template('gold.html')
 
+@app.route('/tokens')
+def tokens():
+    return render_template('tokens.html')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)

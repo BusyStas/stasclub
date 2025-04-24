@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'partials/header_google_analytics.html' %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover popular cryptocurrency tokens and their use cases. Learn about DePIN tokens, utility tokens, and more.">
+    <meta name="keywords" content="crypto tokens, DePIN tokens, utility tokens, cryptocurrency">
+    <title>Crypto Tokens</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('index') }}">
+            <img src="{{ url_for('static', filename='images/logo/logo-transparent-cropped.png') }}" alt="Logo">
+        </a>
+        <div>
+            <h1>Crypto Tokens</h1>
+            {% include 'partials/header_navigation.html' %}
+        </div>
+    </header>
+
+    <main class="content-section">
+        <section>
+            <h2>Blockchain Networks</h2>
+            <p>
+                Level 1 networks  are the foundational blockchains that support the entire ecosystem of cryptocurrencies.
+                They provide the infrastructure for transactions, smart contracts, and decentralized applications (dApps).
+                These are massive investment instruments, because there are hundreds of applications built on top of each of such network.
+
+            </p>    
+        </section>
+        <section>
+           <h2>Blockchain Networks</h2>
+            <p>
+                Level 1 networks  are the foundational blockchains that support the entire ecosystem of cryptocurrencies.
+                They provide the infrastructure for transactions, smart contracts, and decentralized applications (dApps).
+                These are massive investment instruments, because there are hundreds of applications built on top of each of such network.
+                
+            </p>    
+            <table class="fidelity-table">
+                <thead>
+                    <tr>
+                        <th class="fidelity-th">Token</th>
+                        <th class="fidelity-th">Name</th> 
+                        <th class="fidelity-th">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="fidelity-td">BTC</td>
+                        <td class="fidelity-td" style="white-space: nowrap;">
+                            <a href="https://www.coingecko.com/en/coins/bitcoin" target="_blank">Bitcoin ($BTC)</a>
+                        </td>
+                        <td class="fidelity-td">The first and most well-known cryptocurrency, Bitcoin is a decentralized digital currency that allows for peer-to-peer transactions without the need for intermediaries.</td>
+                    </tr>
+                    <tr>
+                        <td class="fidelity-td">ETH</td>
+                        <td class="fidelity-td" style="white-space: nowrap;">
+                            <a href="https://www.coingecko.com/en/coins/ethereum" target="_blank">Ethereum ($ETH)</a>
+                        </td>
+                        <td class="fidelity-td">A decentralized platform that enables developers to build and deploy smart contracts and dApps. Ethereum's native cryptocurrency is Ether (ETH).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Utility Tokens for Crypto Exchanges </h2>
+            <p>
+                
+                Many crypto exchanges have their own native tokens.
+                Regardless of the reasons why they do it, 
+                    there are billions of dollars in these tokens, and they are very reliable and stable.
+                Exchanges host mobile apps and web sites and they have ability 
+                    to create huge demand for their tokens, and all this drives the price up. 
+                
+            </p>  
+            <table class="fidelity-table">
+                <thead>
+                    <tr>
+                        <th class="fidelity-th">Token</th>
+                        <th class="fidelity-th">Name</th> 
+                        <th class="fidelity-th">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="fidelity-td" style="white-space: nowrap;">
+                            <a href="https://www.coingecko.com/en/coins/binance-coin" target="_blank">Binance Coin ($BNB)</a>
+                        </td>
+                        <td class="fidelity-td">Binance Coin</td>
+                        <td class="fidelity-td">The native cryptocurrency of the Binance exchange, BNB is used to pay for trading fees and participate in token sales on the Binance platform.</td>
+                    </tr>
+                    <tr>
+                        <td class="fidelity-td" style="white-space: nowrap;">
+                            <a href="https://www.coingecko.com/en/coins/kucoin-shares" target="_blank">KuCoin Shares ($KCS)</a>
+                        </td>
+                        <td class="fidelity-td">KuCoin Shares</td>
+                        <td class="fidelity-td">The native token of the KuCoin exchange, KCS is used to pay for trading fees and earn rewards on the platform.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        {% include 'partials/disclaimer.html' %}
+    </footer>
+</body>
+</html>
