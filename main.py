@@ -46,5 +46,9 @@ def gold():
 def tokens():
     return render_template('tokens.html')
 
+@app.route('/shop')
+def shop():
+    return render_template('shop.html')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)
