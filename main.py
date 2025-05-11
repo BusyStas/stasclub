@@ -50,5 +50,9 @@ def tokens():
 def shop():
     return render_template('shop.html')
 
+@app.route('/guineapigs')
+def guineapigs():
+    return render_template('guineapigs.html')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)
