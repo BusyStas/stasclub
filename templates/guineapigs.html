@@ -18,6 +18,28 @@
             <h2>These are my Guinea Pigs</h2>
             <p>Discover everything about guinea pigs, their care, and more!</p>
         </section>
+        <div class="card-container">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/pigs/pig_baba.jpg') }}" alt="Baba">
+                <h3>Baba</h3>
+            </div>
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/pigs/pig_asli.jpg') }}" alt="Asli">
+                <h3>Asli</h3>
+            </div>
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/pigs/pig_bella.jpg') }}" alt="Bella">
+                <h3>Bella</h3>
+            </div>
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/pigs/pig_engin.jpg') }}" alt="Engin">
+                <h3>Engin</h3>
+            </div>
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/pigs/pig_mila.jpg') }}" alt="Mila">
+                <h3>Mila</h3>
+            </div>
+        </div>
     </main>
     <footer>
         {% include 'partials/disclaimer.html' %}
