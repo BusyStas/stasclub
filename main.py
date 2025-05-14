@@ -54,5 +54,9 @@ def shop():
 def guineapigs():
     return render_template('guineapigs.html')
 
+@app.route('/robinhood')
+def robinhood():
+    return render_template('robinhood.html')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)

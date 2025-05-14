@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'partials/header_google_analytics.html' %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Robinhood, a platform for trading stocks and cryptocurrencies.">
+    <meta name="keywords" content="Robinhood, crypto trading, stock trading, commission-free trading">
+    <title>Robinhood - Crypto Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <a href="{{ url_for('index') }}" style="text-decoration: none;">
+            <img src="{{ url_for('static', filename='images/logo/logo-transparent-cropped.png') }}" alt="Logo">
+        </a>
+        <div>
+            <h1>Robinhood</h1>
+            {% include 'partials/header_navigation.html' %}
+        </div>
+    </header>
+    <main class="main-container">
+        <section>
+            <h2>What is Robinhood?</h2>
+            <p>
+                Robinhood is a user-friendly platform that allows you to trade stocks and cryptocurrencies with no commission fees. 
+                It is perfect for beginners and experienced traders alike, offering a seamless experience for managing your investments.
+            </p>
+            <p>
+                <a href="https://join.robinhood.com/stanisp-20dbcd" target="_blank"><B>Open an account in Robinhood.</B></a>
+            </p>
+        </section>
+        <section>
+            <h2>Features</h2>
+            <ul>
+                <li>Commission-free trading for stocks and cryptocurrencies.</li>
+                <li>Access to popular cryptocurrencies like Bitcoin, Ethereum, and Dogecoin.</li>
+                <li>Unique 3% cashback credit card (for Robinhood Gold).</li>
+                <li>Opportunities to invest in IPO stocks with no minimum requirement.</li>
+                <li>Intuitive mobile and web applications for easy trading.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Getting Started</h2>
+            <p>
+                To start trading on Robinhood, simply create an account, complete the verification process, and fund your account. 
+                Once set up, you can begin trading stocks and cryptocurrencies with ease.
+            </p>
+        </section>
+    </main>
+    <footer>
+        {% include 'partials/disclaimer.html' %}
+    </footer>
+</body>
+</html>
