@@ -20,7 +20,7 @@
             {% include 'partials/header_navigation.html' %}
         </div>
     </header>
-    <main class="main-container">
+    <main class="main-container" style="margin: 0 20px;">
         <section>
             <h2>What is Robinhood?</h2>
             <p>
@@ -47,6 +47,20 @@
                 Robinhood allows you to participate in IPO without minimums (such as $100K/$500K in Fidelity).
                 Here is what it looks like.
             </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: left;">
+                <p>
+                    <span>Screenshot 1: Robinhood IPO interface showing available stocks for investment.</span>
+                    <br><img src="{{ url_for('static', filename='images/screenshots/robinhood_ipo_s1.webp') }}" alt="IPO Example 1" style="max-width: 100%; border-radius: 8px;">
+                </p>
+                <p>
+                    <span>Screenshot 2: Detailed view of an IPO stock with investment options.</span>
+                    <br><img src="{{ url_for('static', filename='images/screenshots/robinhood_ipo_s2.webp') }}" alt="IPO Example 2" style="max-width: 100%; border-radius: 8px;">
+                </p>
+                <p>
+                    <span>Here are stocks from recent IPOs:</span>
+                    <br><img src="{{ url_for('static', filename='images/screenshots/robinhood_ipo_s3.webp') }}" alt="IPO Example 3" style="max-width: 100%; border-radius: 8px;">
+                </p>
+            </div>
         </section>
     </main>
     <footer>
